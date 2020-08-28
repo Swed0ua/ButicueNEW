@@ -1,0 +1,204 @@
+
+
+/**TEST ***/
+.wrapper__test {
+  position: fixed;
+  right: 10px;
+  top: 250px;
+  z-index: 10;
+}
+
+.test {
+  width: 50px;
+  height: 50px;
+
+  margin: 20px;
+  border-radius: 10px;
+
+  background-color: #000;
+
+  text-align: center;
+  color: yellow;
+  cursor: pointer;
+}
+
+/*** END**/
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  margin-top: -5px;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  box-shadow: 0 0 10px 1px #ebdfdf;
+  display: flex;
+  transition: all ease 1s;
+  z-index: 15;
+}
+
+.menu__burger {
+  width: 40px;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.burger__posit {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.burger__line {
+  width: 40px;
+  height: 4px;
+  background-color: #9d9494;
+  border-radius: 200px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.b_line1 {
+  -webkit-animation: burger__line1 1s;
+  animation: burger__line1 1s;
+}
+
+.b_line2 {
+  width: 30px;
+}
+
+.b_line3 {
+  width: 20px;
+}
+
+.searchBox__wrap {
+  width: 20%;
+  height: 100%;
+  margin-left: 30px;
+  position: relative;
+}
+
+.searchBox__wrap2 {
+  width: 80%;
+  height: 80px;
+  margin-left: 0px;
+}
+
+.button__search {
+  background: none;
+  border: none;
+}
+
+.button__search > img {
+  width: 30px;
+}
+
+.searchBox__box {
+  width: 70%;
+  height: 100%;
+  margin-top: -10px;
+  padding: 0px;
+  border-radius: 90px;
+  transform: translate(0, 12%);
+  border: 1px solid #707070;
+}
+
+.searchBox {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  transform: translate(0, 50%);
+}
+
+.logo {
+  position: absolute;
+  left: calc(50% - 35px);
+  top: 5px;
+}
+
+.logo > a > img {
+  height: 70px;
+}
+
+.consumerCorner {
+  display: flex;
+  flex: 0 0 auto;
+  position: absolute;
+  align-items: center;
+  height: 100%;
+  right: 50px;
+}
+
+.basket {
+  width: 32px;
+  height: 32px;
+}
+
+.basket > a > img {
+  width: 32px;
+}
+
+#basket__score {
+  width: 20px;
+  height: 20px;
+  background-color: #3d8cd2;
+  border-radius: 90%;
+  position: relative;
+  top: -40px;
+  right: -15px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.userAccount {
+  margin-right: 30px;
+  float: left;
+}
+
+.userAccount > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.userAccount__login {
+  display: flex;
+}
+
+.user__img > img {
+  width: 35px;
+}
+
+.user__name {
+  padding: 4px;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 810px) {
+  .user__name {
+    display: none;
+  }
+}
+
+@supports (-webkit-appearance:none){
+
+}
+
+ @media screen and (max-width: 810px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}

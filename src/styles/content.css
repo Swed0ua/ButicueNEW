@@ -1,0 +1,238 @@
+/**Billboard**/
+
+.billboard {
+  width: 100%;
+  height: 448px;
+  background: url(../img/bg2-_-sale.jpg) center no-repeat;
+  position: relative;
+}
+
+.billboard__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.billboard__decorText {
+  color: #fbf4f4;
+  font-size: 40px;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  position: absolute;
+  animation: billboard 4s infinite;
+  animation-timing-function: linear;
+}
+
+.billboard__decorText:nth-last-child(1) {
+  bottom: 0;
+  animation-direction: reverse;
+}
+
+.billboard__redLine {
+  width: 95%;
+  height: 60%;
+  background-color: #d62e2e;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 0 200px 200px 0;
+}
+
+.redLine_text {
+  padding-left: 55px;
+  padding-top: 20px;
+  display: inline-block;
+  line-height: 0.9;
+  position: relative;
+}
+
+.redLine_text > .redLine_text1 {
+  color: #fbf4f4;
+  font-family: "EB Garamond", serif;
+  font-size: 74px;
+}
+
+.redLine_text > .redLine_text2 {
+  color: #fbf4f4;
+  font-family: "EB Garamond", serif;
+  font-size: 32px;
+  text-align: end;
+  width: 100%;
+  display: inline-block;
+}
+
+.redLine_text > a {
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.redLine_text > a > .redLine_button {
+  color: #c9b1b1;
+  background-color: #fff;
+  display: inline-block;
+  padding: 15px 100px;
+  border-radius: 0 30px;
+  margin-top: 60px;
+  transition: all ease 0.4s;
+}
+
+.redLine_text > a > .redLine_button:hover {
+  border-radius: 30px 0;
+  color: #bb2716;
+  box-shadow: 0 0 15px 1px #bb2716;
+}
+
+.billboard__decorImg {
+  position: absolute;
+  top: -50px;
+  right: 330px;
+}
+
+.billboard__decorImg > img {
+  position: absolute;
+}
+
+.billboard__decorImg > img:nth-child(1) {
+  left: 170px;
+  top: 30px;
+}
+
+.billboard__decorImg > img:nth-child(2) {
+  left: -70px;
+}
+
+@media screen and (max-width: 1100px) {
+  .redLine_text > .redLine_text2 {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .redLine_text > .redLine_text1 {
+    font-size: 52px;
+  }
+
+  .redLine_text > .redLine_text2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .billboard__decorImg {
+    display: none;
+  }
+}
+
+/** slider 2 **/
+
+.slider2__title {
+  text-align: center;
+  font-size: 34px;
+}
+
+.slider2__wrapper {
+  padding-top: 50px;
+}
+
+.slider2__tracks {
+  width: 100%;
+  height: 510px;
+  background-color: rgb(108, 205, 223);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.slider2__slide {
+  display: flex;
+  width: 350px;
+  height: 100%;
+  flex: 0 0 auto;
+  background-color: red;
+  transition: all ease 1s;
+}
+
+.slider2__slide:nth-child(odd){
+  background-color: yellow;
+}
+
+.slide2__buttonPrev,
+.slide2__buttonNext {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: blue;
+  opacity: 0.3;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+
+.slide2__buttonPrev:hover,
+.slide2__buttonNext:hover{
+  opacity: 0.8;
+}
+
+.slide2__buttonPrev{
+  left: 0;
+  background: url(..//img/icon/IconLeft.png) center no-repeat;
+}
+
+.slide2__buttonNext {
+  right: 0;
+  background: url(..//img/icon/IconRight.png) center no-repeat;
+}
+
+.slider2__slide>a>img{
+  height: 100%;
+  position: relative;
+}
+
+.slider2__description {
+  width: 350px;
+  text-align: center;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: #ace5f659;
+  z-index: 1;
+  opacity: 1;
+  padding-top: 15px;
+  box-sizing: border-box;
+  transition: all ease-in 0.3s;
+}
+
+.description__price {
+  font-size: 32px;
+  color: #E12A2A;
+}
+
+.description__title { 
+  font-size: 24px;
+}
+
+.slider2__slide:hover
+.slider2__description{
+  height: 200px;
+  transition: all ease-in 0.3s;
+}
+
+
+/**Site Description**/
+
+.siteDescriptions__wrapper {
+  padding: 40px;
+}
+
+.siteDescriptions__title {
+  font-size: 34px;
+  text-align: center;
+  padding: 40px 0 ;
+}
+
+.siteDescriptions {
+  font-size: 14px;
+  line-height: 1.9;
+}

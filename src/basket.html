@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+    
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/bascket.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/fcs7zmg.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>OnlineShop</title>
+  </head>
+  <body>
+    @@include('pages/defHeader&Burger.html')
+
+    <div class="wrapper__test">
+      <div id="skr11pow" class="test">1</div>
+      <div id="skr22prw" class="test">2</div>
+      <div id="skr22prw" class="test">3</div>
+      <div id="skr22prw" class="test">4</div>
+      <div id="skr22prw" class="test">5</div>
+    </div>
+
+    <div class="content content__basket" id="content">
+      <div class="basket__title"><h1>Корзина</h1></div>
+      <hr size="2" color="#707070" />
+      <div class="ordering"></div>
+      <div class="basket__selectP">
+        <div class="basket__thisText"><h4>Вибрані товари</h4></div>
+        <ul class="basket__goodsWrap">
+          <li class="basket__goods goods__select">
+            <div class="goods__img"><img src="img/156846852_images_15580808132.jpg" alt="goods"></div>
+            <div class="goods__descriptions">
+              <h3 class="goods__title">This check</h3>
+              <p class="goods__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                nisi, debitis animi facere provident excepturi
+              </p>
+            </div>
+            <div class="goods__size">
+                <div onclick="checkSize()" class="size__this">M</div>
+                <div onclick="checkSize()" class="size__this">X</div>
+                <div onclick="checkSize()" class="size__this">XL</div>
+                <div onclick="checkSize()" class="size__this">XXL</div>
+            </div>
+            <div class="goods__add">
+              <form onchange="price__one()" action="formFirst">
+              <input form="formFirst" type="number" name="counter" value="1" min="0" max="99" maxlength="2" class="add__counter"></input>
+              </form>
+              <div class="goods__price">50</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    @@include("pages/degFooter.html")
+
+    <!-- Scripts -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/goods.js"></script>
+    <script src="scripts/goodsFile.js"></script>
+    <script src="scripts/priceCalc.js"></script>
+  </body>
+</html>

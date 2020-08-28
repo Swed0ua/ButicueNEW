@@ -1,0 +1,37 @@
+@-webkit-keyframes billboard {
+  0% {
+    right: -100px;
+  }
+  
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes billboard {
+  0% {
+    right: -100px;
+  }
+  
+  100% {
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes billboardRedLine {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes billboardRedLine {
+  0% {
+  }
+  100% {
+  }
+}
+
+@supports (-webkit-appearance:none){
+
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/fcs7zmg.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineShop</title>
+  </head>
+  <body>
+    @@include('pages/defHeader&Burger.html');
+    <div class="content" id="content">
+      <div class="slider__wrapper">
+        <div class="slider__button">
+          <div onclick="sliderGear(100)" class="slider_prev"></div>
+          <div onclick="sliderGear(-100)" class="slider_next"></div>
+          <div class="slider__current">
+            <div onclick="currentSlider(0)" class="current"></div>
+            <div onclick="currentSlider(-100)" class="current"></div>
+            <div onclick="currentSlider(-200)" class="current"></div>
+            <div onclick="currentSlider(-300)" class="current"></div>
+            <div onclick="currentSlider(-400)" class="current"></div>
+          </div>
+        </div>
+        <div class="slide__wrapper slide__wrap__1">
+          <div class="slide__content slide__1">
+            <div class="slide__bgText">New</div>
+            <div class="slide__goods">
+              <div class="goods__text">
+                <div class="goods__name">Just Cavalli</div>
+                <div class="goods__description">
+                  Состав: Вискоза - 57%, Полиэстер - 31%, <br />
+                  Полиамид - 11%, Эластан - 1% <br />
+                  Размер товара на модели: S INT <br />
+                  Параметры модели: 88-60-91 <br />
+                  Рост модели на фото: 175 <br />
+                  Длина: 83 см <br />
+                  Длина рукава: 67 см <br />
+                  Сезон: мульти <br />
+                  Цвет: золотой <br />
+                  Узор: однотонный <br />
+                  Страна производства: Румыния <br />
+                  Застежка: без застежки <br />
+                  Артикул JU662EWJWCN2
+                </div>
+              </div>
+              <div class="goods__layout">
+                <div class="hanger">
+                  <img src="img/slider_Img/5627444.png " alt="aa" />
+                </div>
+                <div class="goods__layoutType"></div>
+              </div>
+            </div>
+            <div class="slide__decoration">
+              <span class="decor__1"><img src="img/slider_Img/jh200_lune_2-seater_eucalyptus_portrait-png.png"alt="1"/></span>
+              <span class="decor__2"
+                ><img src="img/slider_Img/КНО 2649-700x700.png" alt="2"
+              /></span>
+              <span class="decor__3"
+                ><img src="img/slider_Img/123602192_2321332.png" alt="3"
+              /></span>
+            </div>
+          </div>
+        </div>
+        <div class="slide__wrapper slide__wrap__2">
+          <div class="slide__content slide__2"></div>
+        </div>
+        <div class="slide__wrapper slide__wrap__3">
+          <div class="slide__content slide__3"></div>
+        </div>
+        <div class="slide__wrapper slide__wrap__4">
+          <div class="slide__content slide__4"></div>
+        </div>
+        <div class="slide__wrapper slide__wrap__5">
+          <div class="slide__content slide__5"></div>
+        </div>
+      </div>
+      <div class="mainTabs__wrapper">
+        <div class="mainTabs__grid">
+          <div class="mainTabs mainTabs__1">
+            <div class="mainTabs__Text">Light Shop</div>
+            <div class="triangle"></div>
+            <div class="eclipse"></div>
+          </div>
+          <div class="mainTabs mainTabs__2">
+            <div class="mainTabs__Text">Choose your handbag</div>
+            <div class="triangle"></div>
+            <div class="eclipse"></div>
+          </div>
+          <div class="mainTabs mainTabs__3">
+            <div class="mainTabs__Text">Meet the summer</div>
+            <div class="triangle"></div>
+            <div class="eclipse"></div>
+          </div>
+        </div>
+      </div>
+      <div class="billboard">
+        <div class="billboard__decorText">
+          <nobr
+            >SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE</nobr
+          >
+        </div>
+        <div class="billboard__content">
+          <div class="billboard__redLine">
+            <div class="redLine__content">
+              <div class="redLine_text">
+                <span class="redLine_text1">ЛОВИ ЗНИЖКУ</span><br />
+                <span class="redLine_text2">-25% на перший заказ</span>
+                <a href="#"><div class="redLine_button">перейти</div></a>
+              </div>
+              <div class="billboard__decorImg">
+                <img src="img/futbolka-zhenskaya-seraya-1001.png" alt="decor" />
+                <img src="img/unnamed.png" alt="decor" />
+                <img
+                  src="img/1606251-1152-1-icefjord-kids-brilliant-blue_625_auto_png.png"
+                  alt="decor"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="billboard__decorText">
+          <nobr
+            >SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE SALE
+            SALE SALE SALE SALE SALE SALE SALE SALE</nobr
+          >
+        </div>
+      </div>
+      <div class="slider2__wrapper">
+        <div class="slider2__title">
+          Популярне
+        </div>
+        <div class="slider2__tracks">
+          <div onclick="slider2Gear(-1)" class="slide2__buttonNext"></div>
+          <div onclick="slider2Gear(1)" class="slide2__buttonPrev"></div>
+          <div class="slider2__top1 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">cat - footwear 001</span
+              ><br /><span class="description__price">105$</span>
+            </div>
+            <a href="#"
+              ><img src="img/156846852_images_15580808132.jpg" alt="slider2.0"
+            /></a>
+          </div>
+          <div class="slider2__top2 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">super - t-shot 128</span
+              ><br /><span class="description__price">54$</span>
+            </div>
+            <a href="#"
+              ><img src="img/c05fffb377ffba3dea461915cb1f.jpg" alt="slider2.0"
+            /></a>
+          </div>
+          <div class="slider2__top3 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">sun set - hoody 011</span
+              ><br /><span class="description__price">14$</span>
+            </div>
+            <a href="#"><img src="img/завантаження.jpg" alt="slider2.0" /></a>
+          </div>
+
+          <div class="slider2__top4 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">sky - shorts 109</span
+              ><br /><span class="description__price">200$</span>
+            </div>
+            <a href="#"
+              ><img
+                src="img/ukr_pl_Чоловіче-взуття-Caterpillar-Intruder-P723312-17793_1.jpg"
+                alt="slider2.0"
+            /></a>
+          </div>
+          <div class="slider2__top5 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">sky - shorts 109</span
+              ><br /><span class="description__price">34$</span>
+            </div>
+            <a href="#"
+              ><img src="img/156846852_images_15580808132.jpg" alt="slider2.0"
+            /></a>
+          </div>
+          <div class="slider2__top6 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">super - t-shot 128</span
+              ><br /><span class="description__price">70$</span>
+            </div>
+            <a href="#"><img src="img/c05fffb377ffba3dea461915cb1f.jpg" alt="slider2.0"/></a>
+          </div>
+          <div class="slider2__top7 slider2__slide">
+            <div class="slider2__description">
+              <span class="description__title">sun set - hoody 011</span
+              ><br /><span class="description__price">11$</span>
+            </div>
+            <a href="#"><img src="img/завантаження.jpg" alt="slider2.0" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="siteDescriptions__wrapper">
+        <div class="siteDescriptions__title">
+          Інтернет-Магазин Одягу, Взуття, Аксесуарів, Косметики І Парфумерії
+        </div>
+        <div class="siteDescriptions">
+          Великий вибір товарів Інтернет-магазин Lamoda.ua пропонує якісну
+          чоловічий одяг, взуття, аксесуари, товари для спорту і косметичні
+          засоби провідних світових брендів. У каталозі представлено більше 1000
+          виробників. На одному сайті в два кліка можна купити все, що потрібно
+          сучасному чоловікові: від ділового піджака преміум-бренду для важливих
+          зустрічей по роботі до стильного спортивного сумки, в яку можна
+          скласти улюблені шорти і футболки для відпустки. Всі товари
+          поставляються безпосередньо від виробників, сертифікуються і є
+          справжніми. Вибираючи розмір, рекомендується замовляти свій звичайний.
+          У разі будь-яких сумнівів можна безкоштовно проконсультуватися з
+          фахівцем Lamoda.ua по телефону - він допоможе зробити правильний
+          вибір. Доставка по всій Україні Доставка всіх товарів з каталогу
+          Lamoda.ua здійснюється в будь-яку точку України до 8 днів. Разом з
+          провідними логістичними операторами по доставці товарів в Україні -
+          Meest Express і Нова Пошта- ми постійно поліпшуємо наш сервіс і робимо
+          все можливе, щоб Ви отримали Ваше замовлення якомога швидше. Доставка
+          по всій Україні безкоштовна при сумі замовлення від 750 гривень. Якщо
+          сума замовлення менше 750 гривень, вартість доставки складе 69 гривень
+          при кур'єрській доставці, 49 гривень при замовленні на відділення і 39
+          гривень при замовленні на постамат. Оплата і повернення На даний
+          момент оплатити замовлення можна готівкою в момент доставки або
+          банківською картою. Найближчим часом ми представимо і інші способи
+          оплати замовлень. Якщо доставлений товар вам не підійшов, не
+          сподобався або має заводський брак, протягом 14 днів після доставки
+          замовлення ви можете повернути його поштою. Ми перерахуємо вам гроші в
+          мінімально можливі терміни після отримання вашої посилки.
+        </div>
+      </div>
+
+      @@include("pages/degFooter.html")
+    </div>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/goods.js"></script>
+  </body>
+</html>

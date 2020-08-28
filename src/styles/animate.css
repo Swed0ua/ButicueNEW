@@ -1,0 +1,16 @@
+@keyframes billboard {
+  0% {
+    right: -100px;
+  }
+  
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes billboardRedLine {
+  0% {
+  }
+  100% {
+  }
+}

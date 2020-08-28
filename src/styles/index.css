@@ -1,0 +1,126 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+  transition: all ease 1s;
+  float: right ;
+}
+
+.content__basket {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.content__mOpen {
+  width: 80%;
+  float: right;
+  position: relative;
+  transition: all ease 1s;
+}
+
+/**MainTabs**/
+
+.mainTabs__wrapper {
+  padding: 30px;
+  position: relative;
+  box-sizing: border-box;
+  height: 700px;
+  width: 100%;
+}
+
+.mainTabs__grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+}
+
+.mainTabs {
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px #ebdfdf;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainTabs__1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.mainTabs__2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.mainTabs__3 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.mainTabs__Text {
+  text-align: center;
+  color: #F9494F;
+  font-size: 36px;
+  font-family: 'Dancing Script', cursive;
+  z-index: 10;
+  position: relative;
+}
+
+.mainTabs__1 {
+  background: url(../img/21347135_3.jpg) 0 0/cover no-repeat;
+}
+
+.mainTabs__2 {
+  background: url(../img/36-2.jpg) 0 0/cover no-repeat;
+}
+
+.mainTabs__3 {
+  background: url(../img/v-bege__600.jpg) 0 0/cover no-repeat;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 25px solid #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: bottom ease-in 0.6s;
+}
+
+.eclipse {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  opacity: 50%;
+  transition: height ease-in 0.6s;
+}
+
+.mainTabs:hover
+.eclipse{
+  height: 100%;
+  transition: height ease-in 0.6s;
+}
+
+.mainTabs:hover
+.triangle{
+  bottom: 100%;
+  transition: bottom ease-in 0.6s;
+}
