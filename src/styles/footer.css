@@ -47,7 +47,6 @@ footer {
 @media screen and (max-width: 790px) {
     footer {
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 100px;
     }
 }
 

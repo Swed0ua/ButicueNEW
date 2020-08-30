@@ -124,9 +124,30 @@ body {
   bottom: 100%;
   transition: bottom ease-in 0.6s;
 }
+@media screen and (max-width: 790px){
+  .mainTabs__grid {
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+  }
 
-@supports (-webkit-appearance:none){
-.mainTabs__1{background:url(../img/21347135_3.webp) 0 0/cover no-repeat}
-.mainTabs__2{background:url(../img/36-2.webp) 0 0/cover no-repeat}
-.mainTabs__3{background:url(../img/v-bege__600.webp) 0 0/cover no-repeat}
+  .mainTabs__1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .mainTabs__2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .mainTabs__3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
 }

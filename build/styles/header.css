@@ -190,15 +190,3 @@ header {
     display: none;
   }
 }
-
-@supports (-webkit-appearance:none){
-
-}
-
- @media screen and (max-width: 810px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}

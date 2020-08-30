@@ -26,7 +26,6 @@ function autoPrefix (done) {
         .pipe(autoprefixer({
             cascade: false
         }))
-        .pipe(webpCss())
         .pipe(gulpS.dest('build/'));
 }
 
@@ -35,9 +34,6 @@ function webp (done){
     return gulpS.src('src/img/**')
                 .pipe(gulpS.dest('build/img/'))
                 .pipe(src('build/img/**'))
-                .pipe(webPa({
-                    quality: 70
-                }))
                 .pipe(gulpS.dest('build/img/'))
 
 }

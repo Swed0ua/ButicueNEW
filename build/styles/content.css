@@ -119,6 +119,7 @@
   }
 }
 
+
 @media screen and (max-width: 840px) {
   .billboard__decorImg {
     display: none;
@@ -237,33 +238,4 @@
 .siteDescriptions {
   font-size: 14px;
   line-height: 1.9;
-}
-@supports (-webkit-appearance:none){
-.billboard{background:url(../img/bg2-_-sale.webp) center no-repeat}
-.slide2__buttonPrev{background:url(..//img/icon/IconLeft.webp) center no-repeat}
-.slide2__buttonNext{background:url(..//img/icon/IconRight.webp) center no-repeat}
-}
-
- @media screen and (max-width: 1100px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media screen and (max-width: 1000px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media screen and (max-width: 840px){
-
-@supports (-webkit-appearance:none){
-
-}
-
 }

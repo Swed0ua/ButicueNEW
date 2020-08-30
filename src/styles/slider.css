@@ -1,12 +1,14 @@
 .slider__wrapper {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .slide__wrapper {
   width: 100%;
   position: relative;
   height: calc(100vh - 80px);
+  min-height: 360px;
   transition: all ease 1s;
   flex: 0 0 auto;
 }
@@ -22,6 +24,7 @@
   position: relative;
   padding: 50px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .slide__bgText {
@@ -44,8 +47,8 @@
 .slider__button {
   position: absolute;
   z-index: 14;
-  top: 85vh;
-  right: 100px;
+  bottom: 45px;
+  right: 7%;
 }
 
 .slider_next,
@@ -59,12 +62,10 @@
 }
 
 .slider_next {
-  background: url(../img/slider_img/path\1png) 0 0 / auto auto no-repeat;
-  background-position: 50% 50%;
+  background: url(../img/slider_img/Path1.png) 50% 50% / auto auto no-repeat;
 }
 .slider_prev {
-  background: url(../img/slider_Img/Path\-1png) 0 0 / auto auto no-repeat;
-  background-position: 50% 50%;
+  background: url(../img/slider_Img/Path-1.png) 50% 50% / auto auto no-repeat;
 }
 
 .slider__current {
@@ -129,4 +130,83 @@
 }
 
 .goods__layoutType {
+}
+
+/** Decor **/
+.decor {
+  position: absolute;
+}
+
+.decor__1 {
+  z-index: 5;
+  bottom: 0;
+}
+
+.decor__3 {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 20px;
+  transform: scale(0.8);
+}
+
+.decor__2 {
+  z-index: 2;
+  top: 3%;
+  left: 30%;
+  box-shadow: 0 0 20px 0.5px #aca0a0;
+}
+
+.decor__blur {
+  background-color: #aca0a0;
+  position: absolute;
+  filter: blur(10px);
+}
+
+.blur__1 {
+  bottom: 10px;
+  width: 100%;
+  height: 10px;
+  border-radius: 90%;
+  opacity: 0.6;
+}
+
+.blur__3 {
+  bottom: 10px;
+  width: 100%;
+  height: 10px;
+  border-radius: 90%;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 890px) {
+  .slide__decoration {
+    display: none;
+  }
+  .slide__goods {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .goods__name {
+    font-size: 52px;
+    min-height: 60px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .goods__layout {
+    display: none;
+  }
+
+  .goods__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+ .slide__content {
+   padding: 30px;
+ }
 }

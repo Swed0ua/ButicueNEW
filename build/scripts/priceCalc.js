@@ -1,6 +1,3 @@
-let i = 0;
-let bod = [1, 0];
-
 
 function price__one(){
     let goodsPrice = document.querySelector('.goods__price'),
